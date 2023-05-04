@@ -632,3 +632,4 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[9]/status"
+- File: Folder1/Folder1.yaml
