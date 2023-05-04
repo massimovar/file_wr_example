@@ -7,15 +7,18 @@ using FTOptix.CommunicationDriver;
 using System.Linq;
 using FTOptix.CODESYS;
 using System;
+using FTOptix.Modbus;
 #endregion
 
 public class DT_FromPLCToModel : BaseNetLogic
 {
+    private UAValue setDynamicLinks;
     private Folder modelFolder;
 
     [ExportMethod]
     public void GenerateNodesIntoModel()
     {
+        setDynamicLinks = LogicObject.GetVariable("SetDynamicLinks").Value;
         modelFolder = Project.Current.Get<Folder>("Model");
         var startingNode = InformationModel.Get<TagStructure>(LogicObject.GetVariable("InputNode").Value);
         CreateModelTag<TagStructure>(startingNode, modelFolder);
@@ -72,6 +75,7 @@ public class DT_FromPLCToModel : BaseNetLogic
             existingNode = InformationModel.MakeVariable(mTag.BrowseName, mTag.DataType, mTag.ArrayDimensions);
             parentNode.Add(existingNode);
         }
+        if (!setDynamicLinks) return;
         ((IUAVariable)existingNode).SetDynamicLink((UAVariable)fieldNode);
     }
 

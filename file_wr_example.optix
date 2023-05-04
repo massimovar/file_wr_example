@@ -75,5 +75,13 @@ Project:
    Uri: 'urn:FTOptix:CODESYS:Net'
    Module: FTOptix.CODESYS.Net
    Version: 1.0
+  19:
+   Uri: 'urn:FTOptix:Modbus'
+   Module: FTOptix.Modbus
+   Version: 1.0
+  20:
+   Uri: 'urn:FTOptix:Modbus:Net'
+   Module: FTOptix.Modbus.Net
+   Version: 1.0
  Nodes:
  - File: Nodes/file_wr_example.yaml

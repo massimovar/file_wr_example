@@ -1,6 +1,39 @@
 Name: Model
 Type: FolderType
 Children:
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../Variable1"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag1"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Variable3
+  Id: g=86f6e93dd718d8626e8826089ba6d503
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
 - Name: PLC_PRG
   Type: BaseObjectType
   Children:

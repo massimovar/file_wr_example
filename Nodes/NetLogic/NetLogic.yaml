@@ -1,12 +1,14 @@
 Name: NetLogic
 Type: FolderType
 Children:
-- Name: RuntimeNetLogic1
+- Name: TagsCsvImportExport
   Id: g=bed4d0a0c60e1dcc2bf1992215d97590
   Type: NetLogic
   Children:
   - Class: Method
     Name: WriteTagsValues
+  - Class: Method
+    Name: ReadTagsValues
 - Name: DT_FromPLCToModel
   Type: NetLogic
   Children:
@@ -20,3 +22,7 @@ Children:
     Value: {"IdType":2,"Id":"25179a04f06ef32eaaf950bc2e497ad5","Namespace":7}
   - Class: Method
     Name: GenerateNodesIntoModel
+  - Name: SetDynamicLinks
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
