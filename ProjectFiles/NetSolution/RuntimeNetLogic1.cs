@@ -30,16 +30,17 @@ public class RuntimeNetLogic1 : BaseNetLogic
     [ExportMethod]
     public void WriteTagsValues()
     {
-        // var fanArray = Project.Current.Get("CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray");
+        var fanArray = Project.Current.Get("CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray");
         // fanArray.ChildrenRemoteRead();
 
         var b1 = Project.Current.GetVariable("CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/b_1");
         b1.RemoteRead();
-        var csvPath = "%PROJECTDIR%/test.csv";
+        var csvPath = new ResourceUri("%PROJECTDIR%/test.csv").Uri;
         var csvWriter = new CSVFileWriter(csvPath);
         var csvHeader = new string[2] {"name", "value"};
         var b1Data = new string[2] {b1.BrowseName, b1.Value};
         csvWriter.WriteLine(csvHeader);
+        csvWriter.WriteLine(b1Data);
     }
 
     private class CSVFileWriter : IDisposable

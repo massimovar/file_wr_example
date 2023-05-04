@@ -5,9 +5,11 @@ Children:
   Type: TagStructure
   Children:
   - Name: PLC_PRG
+    Id: g=25179a04f06ef32eaaf950bc2e497ad5
     Type: TagStructure
     Children:
     - Name: b_1
+      Id: g=893c49768ba0397b39fe27f4edee083a
       Type: CODESYSTag
       DataType: Boolean
       Value: false
