@@ -13,31 +13,11 @@ Children:
 - Name: PLCAddress
   Type: BaseDataVariableType
   DataType: String
-  Value: "ASPC432"
+  Value: "3K9SSL3"
 - Name: Timeout
   Type: BaseDataVariableType
   DataType: Duration
   Value: "0:00:00:5.0000000"
-- Name: PlcVersion
-  Type: BaseDataVariableType
-  DataType: CODESYSPlcVersion
-  Value: 1
-- Name: Endianness
-  Type: BaseDataVariableType
-  DataType: Endianness
-  Value: 0
-- Name: LoginToPlc
-  Type: BaseDataVariableType
-  DataType: Boolean
-  Value: false
-- Name: Protocol
-  Type: BaseDataVariableType
-  DataType: CODESYSProtocol
-  Value: 0
-- Name: CommunicationBufferSize
-  Type: BaseDataVariableType
-  DataType: UInt32
-  Value: 0
 - Name: OperationCode
   Type: BaseDataVariableType
   DataType: CommunicationOperationCode

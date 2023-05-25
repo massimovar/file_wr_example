@@ -1,5 +1,5 @@
 Name: Model
-Type: FolderType
+Type: ModelCategoryFolder
 Children:
 - Name: Variable2
   Type: BaseDataVariableType
@@ -35,262 +35,302 @@ Children:
   DataType: Boolean
   Value: false
 - Name: PLC_PRG
-  Type: BaseObjectType
+  Id: g=2e431df341e99fe11a8ff86a0de4422c
+  Type: TagStructure
   Children:
   - Name: b_1
-    Type: BaseDataVariableType
+    Id: g=75c5df3491cbed7c749614a68ea3f217
+    Type: CODESYSTag
     DataType: Boolean
     Value: false
     Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/b_1"
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
   - Name: b_2
-    Type: BaseDataVariableType
+    Type: CODESYSTag
     DataType: Boolean
     Value: false
     Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/b_2"
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
   - Name: ComboString
-    Type: BaseDataVariableType
+    Type: CODESYSTag
     DataType: String
     ValueRank: OneDimension
     ArrayDimensions: [51]
     Value: ["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]
     Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/ComboString"
-  - Name: FanArray_10
-    Type: BaseObjectType
-    Children:
-    - Name: rpm
+    - Name: SymbolName
       Type: BaseDataVariableType
-      DataType: Int16
+      DataType: String
+      Value: ""
+    - Name: MaximumLength
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 78
+    - Name: Encoding
+      Type: BaseDataVariableType
+      DataType: Encoding
       Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[10]/rpm"
-    - Name: running
+    - Name: StartArrayIndex
       Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[10]/running"
-  - Name: FanArray_1
-    Type: BaseObjectType
+      DataType: UInt32
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [1]
+  - Name: FanArray
+    Type: TagStructureArray
     Children:
-    - Name: rpm
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+    - Name: ArrayDimensions
+      Type: PropertyType
+      DataType: UInt32
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [11]
+    - Name: 10
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[1]/rpm"
-    - Name: running
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
+      - Name: rpm
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 1
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[1]/running"
-  - Name: FanArray_2
-    Type: BaseObjectType
-    Children:
-    - Name: rpm
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: rpm
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 2
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[2]/rpm"
-    - Name: running
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
+      - Name: rpm
+        Id: g=175f1ee4fd455911197e8287beda599d
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 3
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[2]/running"
-  - Name: FanArray_3
-    Type: BaseObjectType
-    Children:
-    - Name: rpm
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: rpm
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 4
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[3]/rpm"
-    - Name: running
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
+      - Name: rpm
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 5
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[3]/running"
-  - Name: FanArray_4
-    Type: BaseObjectType
-    Children:
-    - Name: rpm
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: rpm
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 6
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[4]/rpm"
-    - Name: running
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
+      - Name: rpm
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 7
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[4]/running"
-  - Name: FanArray_5
-    Type: BaseObjectType
-    Children:
-    - Name: rpm
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: rpm
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 8
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[5]/rpm"
-    - Name: running
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
+      - Name: rpm
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 9
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[5]/running"
-  - Name: FanArray_6
-    Type: BaseObjectType
-    Children:
-    - Name: rpm
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[6]/rpm"
-    - Name: running
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[6]/running"
-  - Name: FanArray_7
-    Type: BaseObjectType
-    Children:
-    - Name: rpm
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[7]/rpm"
-    - Name: running
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[7]/running"
-  - Name: FanArray_8
-    Type: BaseObjectType
-    Children:
-    - Name: rpm
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[8]/rpm"
-    - Name: running
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[8]/running"
-  - Name: FanArray_9
-    Type: BaseObjectType
-    Children:
-    - Name: rpm
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[9]/rpm"
-    - Name: running
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/FanArray[9]/running"
+      - Name: rpm
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: running
+        Type: CODESYSTag
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
   - Name: IntArray
-    Type: BaseDataVariableType
+    Type: CODESYSTag
     DataType: String
     ValueRank: OneDimension
     ArrayDimensions: [11]
     Value: ["","","","","","","","","","",""]
     Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/IntArray"
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: MaximumLength
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 72
+    - Name: Encoding
+      Type: BaseDataVariableType
+      DataType: Encoding
+      Value: 0
+    - Name: StartArrayIndex
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [1]
   - Name: IntBiArray
-    Type: BaseDataVariableType
+    Type: CODESYSTag
     DataType: Int16
-    ValueRank: OneOrMoreDimensions
+    ValueRank: 2
     ArrayDimensions: [10,2]
     Value: 
      {
@@ -310,326 +350,352 @@ Children:
       ]
      }
     Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/IntBiArray"
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: StartArrayIndex
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [0,0]
   - Name: nInt_1
-    Type: BaseDataVariableType
+    Type: CODESYSTag
     DataType: Int16
     Value: 0
     Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/nInt_1"
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
   - Name: nInt_2
-    Type: BaseDataVariableType
+    Type: CODESYSTag
     DataType: Int16
     Value: 0
     Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/nInt_2"
-  - Name: SpindleArray_0
-    Type: BaseObjectType
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+  - Name: SpindleArray
+    Type: TagStructureArray
     Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+    - Name: ArrayDimensions
+      Type: PropertyType
+      DataType: UInt32
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [10]
+    - Name: 0
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[0]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 1
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[0]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 2
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[0]/status"
-  - Name: SpindleArray_1
-    Type: BaseObjectType
-    Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 3
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[1]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 4
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[1]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 5
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[1]/status"
-  - Name: SpindleArray_2
-    Type: BaseObjectType
-    Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 6
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[2]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 7
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[2]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 8
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[2]/status"
-  - Name: SpindleArray_3
-    Type: BaseObjectType
-    Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+    - Name: 9
+      Type: TagStructure
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[3]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[3]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[3]/status"
-  - Name: SpindleArray_4
-    Type: BaseObjectType
-    Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[4]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[4]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[4]/status"
-  - Name: SpindleArray_5
-    Type: BaseObjectType
-    Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[5]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[5]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[5]/status"
-  - Name: SpindleArray_6
-    Type: BaseObjectType
-    Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[6]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[6]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[6]/status"
-  - Name: SpindleArray_7
-    Type: BaseObjectType
-    Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[7]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[7]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[7]/status"
-  - Name: SpindleArray_8
-    Type: BaseObjectType
-    Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[8]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[8]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[8]/status"
-  - Name: SpindleArray_9
-    Type: BaseObjectType
-    Children:
-    - Name: current
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[9]/current"
-    - Name: speed
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[9]/speed"
-    - Name: status
-      Type: BaseDataVariableType
-      DataType: Int16
-      Value: 0
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/SpindleArray[9]/status"
+      - Name: current
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: speed
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: status
+        Type: CODESYSTag
+        DataType: Int16
+        Value: 0
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
 - File: Folder1/Folder1.yaml
+- Name: Variable4
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+- Name: TestArray
+  Id: g=13bd477517eb435a753ae4e10cabfef7
+  Type: BaseDataVariableType
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [2]
+  Value: [0,0]

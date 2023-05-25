@@ -1,5 +1,5 @@
 Name: CommDrivers
-Type: FolderType
+Type: CommDriversCategoryFolder
 Children:
 - File: CODESYSDriver1/CODESYSDriver1.yaml
 - File: ModbusDriver1/ModbusDriver1.yaml

@@ -1,5 +1,5 @@
 Name: NetLogic
-Type: FolderType
+Type: NetLogicCategoryFolder
 Children:
 - Name: TagsCsvImportExport
   Id: g=bed4d0a0c60e1dcc2bf1992215d97590
@@ -26,3 +26,32 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+- Name: example_DT_prepare_structure
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: NodeToClear
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"2e431df341e99fe11a8ff86a0de4422c","Namespace":7}
+  - Class: Method
+    Name: ClearSymbolNameOnAllNodes
+- Name: example_RT_remote_write
+  Id: g=ed9318ad4e8b2a5aab5616b857f47443
+  Type: NetLogic
+  Children:
+  - Name: sourceNode
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"2e431df341e99fe11a8ff86a0de4422c","Namespace":7}
+  - Name: destinationNode
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"25179a04f06ef32eaaf950bc2e497ad5","Namespace":7}
+  - Class: Method
+    Name: RemoteWriteToDestination
+  - Class: Method
+    Name: ArrayElementRemoteWrite

@@ -5,8 +5,8 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.0
- CoreVersion: 1.0
+ ProductVersion: 1.1
+ CoreVersion: 2.0
  Dependencies:
   2:
    Uri: file_wr_example
@@ -14,7 +14,7 @@ Project:
   3:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 1.0
+   Version: 2.1
   5:
    Uri: 'urn:FTOptix:TagImporter'
    Module: FTOptix.TagImporter

@@ -1,10 +1,6 @@
 Name: file_wr_example
 Type: ProjectFolder
 Children:
-- Name: BranchingEnabled
-  Type: BaseDataVariableType
-  DataType: Boolean
-  Value: false
 - Name: PasswordPolicy
   Type: PasswordPolicy
   Children:
@@ -24,18 +20,6 @@ Children:
     Type: PropertyType
     DataType: Byte
     Value: 8
-- Name: Locales
-  Type: BaseDataVariableType
-  DataType: String
-  ValueRank: OneDimension
-  ArrayDimensions: [0]
-  Value: ["en-US"]
-- Name: LocaleFallbackList
-  Type: BaseDataVariableType
-  DataType: String
-  ValueRank: OneDimension
-  ArrayDimensions: [0]
-  Value: ["en-US"]
 - File: UI/UI.yaml
 - File: Model/Model.yaml
 - File: Converters/Converters.yaml
@@ -50,12 +34,41 @@ Children:
 - File: Security/Security.yaml
 - File: Translations/Translations.yaml
 - File: Retentivity/Retentivity.yaml
-- Name: DefaultUserFolder
-  Type: NodePointer
-  DataType: NodeId
-  Value: {"IdType":2,"Id":"cdc65c9485243a7d58a55df9c91526fc","Namespace":7}
+- Name: Authentication
+  Type: PropertyGroup
   Children:
-  - Name: Kind
-    Type: PropertyType
+  - Name: DefaultUserFolder
+    Type: NodePointer
     DataType: NodeId
-    Value: {"Id":61}
+    ReferenceType: HasProperty
+    Value: {"IdType":2,"Id":"cdc65c9485243a7d58a55df9c91526fc","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":61}
+- Name: AlarmConfiguration
+  Type: PropertyGroup
+  Children:
+  - Name: BranchingEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: false
+- Name: Localization
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: LocaleFallbackList
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
